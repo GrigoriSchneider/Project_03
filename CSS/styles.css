@@ -1,0 +1,115 @@
+*, *:before, *:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #3e2e12;
+}
+
+form{
+    max-width: 300px;
+    margin: 25px auto;
+    padding: 10px 20px;
+    background: white;
+    border-radius: 8px;
+}
+h1, h2,header, footer{
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+h1{
+    color: white;
+    background: #040432;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.line-1{
+    border-top: 8px solid #333;
+    border-bottom: 5px solid #333;
+    padding: 5px 0px 5px 0px;
+}
+.line-2{
+    border-top: 2px solid #333;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+textarea,
+select{
+    background: lightgrey;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    color: #040432;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.3)  inset;
+    margin-bottom: 20px;
+    border-radius: 6px;
+}
+input[type="number"]
+{
+    width: 70%;
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin: 0 4px 8px 0;
+}
+input:focus,
+textarea:focus{
+    background-color: #6bd3ff;
+    transition: background-color 1s;
+}
+button{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    border: 1px solid darkblue;
+    background-color: #5eb4ff;
+}
+
+fieldset{
+    margin-bottom: 30px;
+    border: none;
+}
+legend{
+    font-size: 1.6em;
+    margin-bottom: 10px;
+}
+label {
+    font-size: 20px;
+    padding-top: 25px;
+}
+#javascript_news,
+#plain_text{
+    margin-bottom: 25px;
+}
+
+#topics{
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+
+    form{
+        max-width: 900px;
+    }
+    .field-top{
+        display: block;
+        width: 18%;
+        float: left;
+        padding-top: 10px;
+    }
+    .textfield{
+        max-width: 80%;
+    }
+}
